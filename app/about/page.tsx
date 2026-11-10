@@ -269,14 +269,14 @@ export default function AboutPage() {
             {[
               {
                 href: "/certifications",
-                image: "/certifications/gst-registration.jpg",
+                image: "/Certifications/gst-registration.jpg",
                 title: "GST registration certificate",
                 detail: "Form GST REG-06, issued 30 October 2023.",
                 pdf: "/Certifications/AA091023159908X_RC30102023 (1).pdf",
               },
               {
                 href: "/certifications",
-                image: "/certifications/udyam-registration.jpg",
+                image: "/Certifications/udyam-registration.jpg",
                 title: "Udyam registration certificate",
                 detail: "Micro enterprise, registration 2026-27.",
                 pdf: "/Certifications/Print - Udyam Registration Certificate.pdf",

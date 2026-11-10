@@ -28,7 +28,7 @@ const documents = [
     detail:
       "Registration under the Goods and Services Tax Act for the proprietorship trading as Smart Engineering Solution.",
     issued: "Issued 30 October 2023",
-    image: "/certifications/gst-registration.jpg",
+    image: "/Certifications/gst-registration.jpg",
     pdf: "/Certifications/AA091023159908X_RC30102023 (1).pdf",
     rows: [
       { label: "Legal name", value: site.legalName },
@@ -43,7 +43,7 @@ const documents = [
     detail:
       "Registration as a micro enterprise under the Udyam registration framework for MSMEs.",
     issued: "Udyam registration 2026-27",
-    image: "/certifications/udyam-registration.jpg",
+    image: "/Certifications/udyam-registration.jpg",
     pdf: "/Certifications/Print - Udyam Registration Certificate.pdf",
     rows: [
       { label: "Enterprise name", value: site.tradeName },
