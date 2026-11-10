@@ -89,7 +89,6 @@ export function SiteHeader() {
       className="site-header sticky top-0 z-50"
       onClickCapture={() => {
         setOpenMenu(null);
-        setMobileOpen(false);
       }}
     >
       <div className="bg-navy-deep text-on-dark">
