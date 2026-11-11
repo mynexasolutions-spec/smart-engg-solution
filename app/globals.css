@@ -613,7 +613,7 @@ dialog.lightbox[open] {
   display: flex;
   flex: none;
   align-items: center;
-  gap: clamp(2.5rem, 6vw, 6rem);
+  gap: clamp(2rem, 6vw, 6rem);
   padding: 1.25rem clamp(2.5rem, 6vw, 6rem) 1.25rem var(--gutter);
 }
 
@@ -626,8 +626,18 @@ dialog.lightbox[open] {
 
 .brand-marquee__image {
   object-fit: contain;
+  transform: scale(var(--brand-logo-scale, 1));
+  transform-origin: center;
   opacity: 0.92;
   transition: opacity 180ms var(--ease-out);
+}
+
+.brand-marquee__logo--samsung {
+  --brand-logo-scale: 1.7;
+}
+
+.brand-marquee__logo--hitachi {
+  --brand-logo-scale: 1.65;
 }
 
 .brand-marquee__logo:hover .brand-marquee__image {
@@ -729,6 +739,12 @@ dialog.lightbox[open] {
 
   .whatsapp-float > span {
     display: none;
+  }
+
+  .brand-marquee__group {
+    gap: 1.25rem;
+    padding-block: 1rem;
+    padding-inline-end: 1.25rem;
   }
 }
 

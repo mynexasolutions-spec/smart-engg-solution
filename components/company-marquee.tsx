@@ -30,7 +30,10 @@ export function CompanyMarquee() {
               aria-hidden={copy === 1}
             >
               {companyLogos.map((company) => (
-                <li key={company.name} className="brand-marquee__logo">
+                <li
+                  key={company.name}
+                  className={`brand-marquee__logo brand-marquee__logo--${company.name.toLowerCase()}`}
+                >
                   <Image
                     src={company.src}
                     alt={copy === 0 ? company.name : ""}
