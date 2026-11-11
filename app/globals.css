@@ -597,6 +597,53 @@ dialog.lightbox[open] {
   animation: rise 500ms var(--ease-out) both;
 }
 
+.brand-marquee {
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+}
+
+.brand-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: brand-marquee 30s linear infinite;
+  will-change: transform;
+}
+
+.brand-marquee__group {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 6rem);
+  padding: 1.25rem clamp(2.5rem, 6vw, 6rem) 1.25rem var(--gutter);
+}
+
+.brand-marquee__logo {
+  position: relative;
+  flex: none;
+  width: clamp(8rem, 14vw, 11rem);
+  height: clamp(3.5rem, 6vw, 4.5rem);
+}
+
+.brand-marquee__image {
+  object-fit: contain;
+  opacity: 0.92;
+  transition: opacity 180ms var(--ease-out);
+}
+
+.brand-marquee__logo:hover .brand-marquee__image {
+  opacity: 1;
+}
+
+@keyframes brand-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 /* Tailwind's compact utilities are used widely in the content system; keep them readable. */
 .text-sm {
   font-size: var(--text-small);
@@ -632,7 +679,8 @@ dialog.lightbox[open] {
 
   .reveal,
   .hero-rise,
-  .fade-in {
+  .fade-in,
+  .brand-marquee__track {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;

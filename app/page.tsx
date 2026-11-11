@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/button";
+import { CompanyMarquee } from "@/components/company-marquee";
 import { ContactCta } from "@/components/contact-cta";
 import { FaqList } from "@/components/faq";
 import { JsonLd } from "@/components/json-ld";
@@ -250,6 +251,8 @@ export default function HomePage() {
           </div>
         </div>
       </Section>
+
+      <CompanyMarquee />
 
       <Section tone="paper-2">
         <div className="container-x grid gap-12 lg:grid-cols-12 lg:gap-16">
